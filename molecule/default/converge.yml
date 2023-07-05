@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: "Include dfang.ansible_role_asdf"
+      ansible.builtin.include_role:
+        name: "dfang.ansible_role_asdf"
